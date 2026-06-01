@@ -6,4 +6,4 @@ imbalanced-learn
 matplotlib
 librosa
 soundfile
-jupyter
+jupyter or colab 
