@@ -1,0 +1,33 @@
+# ----- Raw participant data: NEVER commit (ethics + size) -----
+data/raw/
+data/**/*.oe
+data/**/*.wav
+data/**/*.csv
+!data/sample/**          # allow a tiny de-identified/synthetic sample
+!data/**/README.md
+*.dxa
+
+# ----- Large / generated artifacts -----
+*.zip
+results/**/*.pdf
+results/**/*.png
+*.pkl
+*.joblib
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.python-version
+
+# ----- Notebooks output noise (optional: strip outputs before commit) -----
+# *.ipynb   # uncomment if committing cleaned scripts instead of notebooks
+
+# ----- OS / editor -----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
