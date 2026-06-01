@@ -35,7 +35,20 @@ pip install -r requirements.txt
 # 3. cross-approach panel -> shared/pipeline/  (controlled comparison)
 ```
 
-## Method notes (Approach C)
-- Primary classifier: logistic regression on 2 band features (`avg_low_dB`, `avg_high_dB`) per sensor.
-- Validation: leave-one-subject-out (LOSO). **No oversampling in the primary analysis.**
-- Cross-approach comparison uses the shared pipeline (single split + SMOTE) and is reported **separately** from the primary LOSO result — the two use different validation schemes and are not ranked against each other.
+## Reproducing the analysis (Approach C)
+
+> **Note:** The dataset is private. Raw participant data is **not** included in
+> this repository — it is held on restricted-access Google Drive and provided to
+> the examination committee on request, subject to ethics approval (see
+> `data/README.md`). The steps below assume you have been granted access and
+> have placed the data locally as described there.
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run, in order:
+
+1. **Feature extraction** — `approach_c_humming/feature_extraction/`
+2. **Primary analysis** — `approach_c_humming/analysis/` (LOSO + permutation)
+3. **Cross-approach panel** — `shared/pipeline/` (controlled comparison)
