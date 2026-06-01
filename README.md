@@ -24,10 +24,7 @@ The system investigates four acoustic protocols on the OpenEarable v2 platform.
 
 ## Data availability & ethics
 This project uses DXA-confirmed data and in-ear recordings from human
-participants. Raw data is **not** publicly distributed. De-identified data may
-be available from the authors on reasonable request, subject to ethics
-committee approval. Only a small de-identified/synthetic sample (if any) is
-included under `data/sample/` for code demonstration.
+participants. Raw data is **not** publicly distributed.
 
 ## Reproducing the analysis (Approach C)
 ```bash
