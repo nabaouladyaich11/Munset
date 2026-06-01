@@ -1,9 +1,0 @@
-numpy
-pandas
-scipy
-scikit-learn
-imbalanced-learn
-matplotlib
-librosa
-soundfile
-jupyter or colab 
