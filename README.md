@@ -26,14 +26,7 @@ The system investigates four acoustic protocols on the OpenEarable v2 platform.
 This project uses DXA-confirmed data and in-ear recordings from human
 participants. Raw data is **not** publicly distributed.
 
-## Reproducing the analysis (Approach C)
-```bash
-pip install -r requirements.txt
-# place data per data/README.md, then:
-# 1. feature extraction  -> approach_c_humming/feature_extraction/
-# 2. primary analysis     -> approach_c_humming/analysis/  (LOSO + permutation)
-# 3. cross-approach panel -> shared/pipeline/  (controlled comparison)
-```
+
 
 ## Reproducing the analysis (Approach C)
 
